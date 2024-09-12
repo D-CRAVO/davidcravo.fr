@@ -1,0 +1,112 @@
+main{
+    padding: 1rem;
+    margin-top: 12rem;
+}
+
+main img{
+    width: 100%;
+}
+
+h1, h2{
+    margin: 0;
+    padding: 0;
+    font-size:90%;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+    font-size: 90%;
+}
+
+section{
+    margin: 2rem 0;
+}
+
+.style{
+    font-style: italic;
+}
+
+a.currentlink,
+a.currentlink:hover{
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    margin-top: 1rem;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgba(220, 0, 0, 1);
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.styled:hover {
+    background-color: rgba(255, 0, 0, 1);
+}
+
+.styled:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+.styled a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+@media (min-width: 600px) and (max-width: 1024px)
+{
+    main{
+        width: 50rem;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 140%;
+        margin-top: 10rem;
+    }
+
+    section{
+        margin: 4rem 0;
+    }
+
+    section h1{
+        font-size: 120%;
+    }
+}
+
+@media (min-width: 1024px)
+{
+    main{
+        width: 150rem;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 180%;
+        margin-top: 10rem;
+    }
+
+    section{
+        margin: 6rem 0;
+        display: flex;
+    }
+
+    section img{
+        width: 500px;
+        padding-right: 10rem;
+    }
+
+    section h1{
+        font-size: 120%;
+    }
+} 

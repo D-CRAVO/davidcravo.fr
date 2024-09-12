@@ -1,0 +1,36 @@
+main{
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 12rem;
+}
+
+main p{
+    padding: 1rem;
+    text-align: justify;
+}
+
+a.currentlink,
+a.currentlink:hover{
+    color: #ff0000;
+    font-weight: bold;
+}
+
+@media (min-width: 600px) and (max-width: 1024px)
+{
+    main{
+        width: 40rem;
+        font-size: 2rem;
+        padding-bottom: 4rem;
+        padding-top: 10rem;
+    }
+}
+
+@media (min-width: 1024px)
+{
+    main{
+        width: 80rem;
+        font-size: 3rem;
+        padding-bottom: 5rem;
+        padding-top: 10rem;
+    }
+} 

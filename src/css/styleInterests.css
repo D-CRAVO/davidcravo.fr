@@ -1,0 +1,89 @@
+main{
+    padding: 1rem;
+    margin-top: 12rem;
+}
+
+section{
+    margin: 2rem 0;
+}
+
+section img{
+    display: none;
+}
+
+h1{
+    text-decoration: underline;
+}
+
+h1{
+    font-size:100%;
+}
+
+h2{
+    font-size: 90%;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+    font-size: 90%;
+    text-align: justify;
+}
+
+a.currentlink,
+a.currentlink:hover{
+    color: #ff0000;
+    font-weight: bold;
+}
+
+@media (min-width: 600px) and (max-width: 1024px)
+{
+    main{
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 140%;
+        margin-top: 10rem;
+    }
+
+    section{
+        margin: 4rem 0;
+    }
+
+    h1{
+        font-size: 120%;
+    }
+}
+
+@media (min-width: 1024px)
+{
+    main{
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 180%;
+        margin-top: 5rem;
+    }
+
+    section{
+        margin: 6rem 0;
+        display: flex;
+    }
+
+    section img{
+        display: flex;
+        padding: 1rem;
+    }
+
+    section div{
+        margin-top: 11rem;
+        margin-right: 6rem;
+    }
+
+    h1{
+        font-size: 120%;
+    }
+
+    p{
+        padding-right: 5rem;
+    }
+  
+} 

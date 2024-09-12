@@ -1,0 +1,48 @@
+footer{
+    background-color: #843C0C;
+    background-color: #808080;
+    color: #FFCC00;
+    color: #000;
+    font-size: 0.7em;
+    padding: 0.1rem 0.5rem;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+footer div:first-child{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer a{
+    color: inherit;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: #ff0000;
+}
+
+.gradient{
+    background: linear-gradient(#ffffff22, #00000022, #00000022);
+    box-shadow: 0 1px 0 0 black;
+}
+
+@media (min-width: 600px) and (max-width: 1024px)
+{
+    footer div{
+        font-size: 130%;
+        padding: 0.3rem 0.5rem;
+    }
+}
+
+@media (min-width: 1024px)
+{
+    footer div{
+        font-size: 150%;
+        padding: 0.5rem 0.5rem;
+    }
+} 

@@ -1,0 +1,92 @@
+main{
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15rem;
+    display: flex;
+}
+
+main p{
+    padding: 1rem;
+    text-align: center;
+}
+
+a.currentlink,
+a.currentlink:hover{
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.weight{
+    font-weight: bold;
+}
+
+aside{
+    /* margin-left: 5rem; */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: flex-start; */
+}
+
+aside img{
+    width: 50px;
+    margin: 5rem 0 5rem 15rem;
+
+}
+
+main form{
+    display: flex;
+    flex-direction: column;
+}
+
+main label{
+    margin: 1rem 0 0.5rem 0;
+    font-size: 3rem;
+}
+
+main input{
+    height: 4rem;
+    width: 70rem;
+    outline-color: #0000ff50;
+    padding: 0 1rem;
+}
+
+main textarea{
+    height: 20rem;
+    resize: none;
+    outline-color: #0000ff50;
+    padding: 1rem;
+}
+
+main button{
+    margin-top: 2rem;
+    height: 4rem;
+    font-size: 2rem;
+    background-color: #0000ff90;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+main button:hover{
+    background-color: #0000ff70;
+}
+
+
+
+@media (min-width: 600px) and (max-width: 1024px)
+{
+    main{
+        width: 40rem;
+        font-size: 2rem;
+        padding-bottom: 4rem;
+    }
+}
+
+@media (min-width: 1024px)
+{
+    main{
+        width: 80rem;
+        font-size: 3rem;
+        padding-bottom: 5rem;
+    }
+}

@@ -1,0 +1,120 @@
+/* 
+couleur 1 #843C0C
+couleur 2 #FF9900
+couleur 3 #FFCC00
+*/
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 2em;
+    /*background-color: #0D4663;*/
+    /*background-image: url(../img/home/fontHome.jpg);*/
+    color: #fff;
+    color: #0D4663;
+}
+
+h1 a{
+    /* color: #fff; */
+    color: #0D4663;
+    text-decoration: none;
+}
+
+img{
+    border-radius: 50%;
+    width: 20%;
+    margin: 3rem 15rem;
+}
+
+a.currentlink,
+a.currentlink:hover{
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.cv{
+    font-size: 3rem;
+    /* color: #fff; */
+    color: #0D4663;
+    text-decoration: none;
+    margin: 2.5rem;
+}
+
+main{
+    margin-top: 12rem;
+    text-align: center;
+}
+
+main article{
+    display: flex;
+}
+
+main h1{
+    padding-bottom: 3rem;
+}
+
+main h1 a:hover,
+.cv:hover{
+    color: #ff0000;
+}
+
+main article div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+button a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.boutonAcceuil {
+    width: 25rem;
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    margin: 0 auto;
+    font-size: 0.75em;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: #FFCC00;
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.boutonAcceuil:hover {
+    background-color: #ff0000;
+}
+
+.boutonAcceuil:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+.gradient{
+    background: linear-gradient(#ffffff22, #00000022, #00000022);
+    box-shadow: 0 1px 0 0 black;
+}
+
+.gradientTitle
+{
+    color: #0D4663;
+    background: linear-gradient(#ffffff22, #00000022 , #00000022);
+    box-shadow: 0 1px 0 0 black;
+}
+
+@media (min-width: 600px)
+{
+    img{
+        width: 40rem;
+    }
+}
