@@ -1,39 +1,10 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>David CRAVO</title>
-        <link rel="stylesheet" href="src/css/styleHome.css">
-        <link rel="stylesheet" href="/src/css/styleHeader.css">
-        <link rel="stylesheet" href="/src/css/styleFooter.css">
-        <link rel="icon" href="src/img/logoCravoDavid.png">
-    </head>
+    <?php require 'components/head.php'?>
 
     <body>
-
-        <header>
-            <div class="gradient">
-                <a href="../index.html">
-                    <img src="/src/img/logoCravoDavid.png" alt="Logo de David CRAVO">
-                </a>
-                <nav >
-                    <ul>
-                        <li><a class="currentlink" href="index.html">Acceuil</a></li>
-                        <li><a href="/pages/profile.html">Profil</a></li>
-                        <li><a href="/pages/experience.html">Expérience</a></li>
-                        <li><a href="/pages/education.html">Formations</a></li>
-                        <li><a href="/pages/skills.html">Compétences</a></li>
-                        <li><a href="/pages/interests.html">Loisirs</a></li>
-                        <li><a href="/pages/achievements.html">Réalisations</a></li>
-                        <li><a href="/pages/contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-
+        <?php require 'components/header.php'?>
         <main>
             <h1 class="gradientTitle">Bonjour !</h1>
             <article>

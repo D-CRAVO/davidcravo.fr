@@ -20,7 +20,7 @@
                 </a>
             <nav >
                 <ul>
-                    <li><a href="../index.html">Acceuil</a></li>
+                    <li><a href="../index.php">Acceuil</a></li>
                     <li><a href="profile.html">Profil</a></li>
                     <li><a href="experience.html">Expérience</a></li>
                     <li><a href="education.html">Formations</a></li>
