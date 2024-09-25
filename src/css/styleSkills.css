@@ -1,18 +1,19 @@
 
-main{
+.skillsMain{
     padding: 1rem;
     margin: 12rem 0 2rem 0;
     font-size: 90%;
     text-align: center;
 }
 
-h1, h2{
+.skillsSection h1,
+.skillsSection h2{
     font-size: 90%;
 }
 
 
 
-img{
+.skillsSection img{
     display: none;
 }
 
@@ -33,7 +34,7 @@ a.currentlink:hover{
 
 @media (min-width: 600px) and (max-width: 1024px)
 {
-    main{
+    .skillsMain{
         width: 40rem;
         margin: 10rem auto 5rem auto;
         line-height: 3rem; 
@@ -41,14 +42,15 @@ a.currentlink:hover{
         font-size: 120%;
     }
 
-    h1, h2{
+    .skillsSection h1,
+    .skillsSection h2{
         font-size: 120%;
     }
 }
 
 @media (min-width: 1024px)
 {
-    main{
+    .skillsMain{
         width: 70rem;
         margin: 10rem auto 5rem auto;
         justify-content: center;
@@ -58,33 +60,30 @@ a.currentlink:hover{
         font-size: 140%;
     }
 
-    h1, h2{
+    .skillsSection h1,
+    .skillsSection h2{
         font-size: 140%;
     }
 
-    main section:nth-child(2n){
+    .skillsSection:nth-child(2n){
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
 
-    img{
+    .skillsSection img{
         display: flex;
         width: 5rem;
         margin: 2rem;
     }
 
-    article{
+    .skillsArticle{
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
 
-    article div{
-        padding-top: 0.9rem;
-    }
-
-    main section:last-child img{
+    .skillsSection:last-child img{
         width: 3rem;
         height: 100%;
         justify-content: center;

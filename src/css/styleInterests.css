@@ -1,29 +1,26 @@
-main{
+.interestsMain{
     padding: 1rem;
     margin-top: 12rem;
 }
 
-section{
+.interestsSection{
     margin: 2rem 0;
 }
 
-section img{
+.interestsImage{
     display: none;
 }
 
-h1{
+.interestsSection h1{
+    font-size:100%;
     text-decoration: underline;
 }
 
-h1{
-    font-size:100%;
-}
-
-h2{
+.interestsSection h2{
     font-size: 90%;
 }
 
-p{
+.interestsSection p{
     margin: 0;
     padding: 0;
     font-size: 90%;
@@ -38,51 +35,51 @@ a.currentlink:hover{
 
 @media (min-width: 600px) and (max-width: 1024px)
 {
-    main{
+    .interestsMain{
         margin-left: auto;
         margin-right: auto;
         font-size: 140%;
         margin-top: 10rem;
     }
 
-    section{
+    .interestsSection{
         margin: 4rem 0;
     }
 
-    h1{
+    .interestsSection h1{
         font-size: 120%;
     }
 }
 
 @media (min-width: 1024px)
 {
-    main{
+    .interestsMain{
         margin-left: auto;
         margin-right: auto;
         font-size: 180%;
         margin-top: 5rem;
     }
 
-    section{
+    .interestsSection{
         margin: 6rem 0;
         display: flex;
     }
 
-    section img{
+    .interestsImage{
         display: flex;
         padding: 1rem;
     }
 
-    section div{
+    .interestsSection div{
         margin-top: 11rem;
         margin-right: 6rem;
     }
 
-    h1{
+    .interestsSection h1{
         font-size: 120%;
     }
 
-    p{
+    .interestsSection p{
         padding-right: 5rem;
     }
   

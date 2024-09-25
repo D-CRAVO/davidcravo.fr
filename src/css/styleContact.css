@@ -1,11 +1,11 @@
-main{
+.contactMain{
     margin-left: auto;
     margin-right: auto;
     padding-top: 15rem;
     display: flex;
 }
 
-main p{
+.contactMain p{
     padding: 1rem;
     text-align: center;
 }
@@ -20,44 +20,44 @@ a.currentlink:hover{
     font-weight: bold;
 }
 
-aside{
+.contactAside{
     /* margin-left: 5rem; */
     /* display: flex;
     flex-direction: column;
     justify-content: flex-start; */
 }
 
-aside img{
+.contactAside img{
     width: 50px;
     margin: 5rem 0 5rem 15rem;
 
 }
 
-main form{
+.contactMain form{
     display: flex;
     flex-direction: column;
 }
 
-main label{
+.contactMain label{
     margin: 1rem 0 0.5rem 0;
     font-size: 3rem;
 }
 
-main input{
+.contactMain input{
     height: 4rem;
     width: 70rem;
     outline-color: #0000ff50;
     padding: 0 1rem;
 }
 
-main textarea{
+.contactMain textarea{
     height: 20rem;
     resize: none;
     outline-color: #0000ff50;
     padding: 1rem;
 }
 
-main button{
+.contactMain button{
     margin-top: 2rem;
     height: 4rem;
     font-size: 2rem;
@@ -67,7 +67,7 @@ main button{
     cursor: pointer;
 }
 
-main button:hover{
+.contactMain button:hover{
     background-color: #0000ff70;
 }
 
@@ -75,7 +75,7 @@ main button:hover{
 
 @media (min-width: 600px) and (max-width: 1024px)
 {
-    main{
+    .contactMain{
         width: 40rem;
         font-size: 2rem;
         padding-bottom: 4rem;
@@ -84,7 +84,7 @@ main button:hover{
 
 @media (min-width: 1024px)
 {
-    main{
+    .contactMain{
         width: 80rem;
         font-size: 3rem;
         padding-bottom: 5rem;

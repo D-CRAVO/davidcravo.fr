@@ -15,13 +15,13 @@ body{
     color: #0D4663;
 }
 
-h1 a{
-    /* color: #fff; */
+/* h1 a{
+    color: #fff;
     color: #0D4663;
     text-decoration: none;
-}
+} */
 
-img{
+.homeImage{
     border-radius: 50%;
     width: 20%;
     margin: 3rem 15rem;
@@ -33,7 +33,7 @@ a.currentlink:hover{
     font-weight: bold;
 }
 
-.cv{
+.document{
     font-size: 3rem;
     /* color: #fff; */
     color: #0D4663;
@@ -41,37 +41,33 @@ a.currentlink:hover{
     margin: 2.5rem;
 }
 
-main{
+.homeMain{
     margin-top: 12rem;
     text-align: center;
 }
 
-main article{
+.homeArticle{
     display: flex;
 }
 
-main h1{
-    padding-bottom: 3rem;
-}
-
-main h1 a:hover,
+/* main h1 a:hover,
 .cv:hover{
     color: #ff0000;
-}
+} */
 
-main article div{
+.homeDocuments{
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: left;
 }
 
-button a{
+/* button a{
     color: #fff;
     text-decoration: none;
-}
+} */
 
-.boutonAcceuil {
+/* .boutonAcceuil {
     width: 25rem;
     border: 0;
     line-height: 2.5;
@@ -89,16 +85,16 @@ button a{
                                       rgba(0, 0, 0, 0));
     box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
                 inset -2px -2px 3px rgba(0, 0, 0, .6);
-}
+} */
 
-.boutonAcceuil:hover {
+/* .boutonAcceuil:hover {
     background-color: #ff0000;
-}
+} */
 
-.boutonAcceuil:active {
+/* .boutonAcceuil:active {
     box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
                 inset 2px 2px 3px rgba(0, 0, 0, .6);
-}
+} */
 
 .gradient{
     background: linear-gradient(#ffffff22, #00000022, #00000022);
@@ -107,6 +103,7 @@ button a{
 
 .gradientTitle
 {
+    padding-bottom: 3rem;
     color: #0D4663;
     background: linear-gradient(#ffffff22, #00000022 , #00000022);
     box-shadow: 0 1px 0 0 black;
@@ -114,7 +111,7 @@ button a{
 
 @media (min-width: 600px)
 {
-    img{
+    .homeImage{
         width: 40rem;
     }
 }

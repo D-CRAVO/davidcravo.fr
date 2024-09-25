@@ -1,25 +1,26 @@
-main{
+.experienceMain{
     padding: 1rem;
     margin-top: 12rem;
 }
 
-section img{
+.experienceSection img{
     display: none;
 }
 
-h1, h2{
+.experienceArticle h1,
+.experienceArticle h2{
     margin: 0;
     padding: 0;
     font-size:90%;
 }
 
-p{
+.experienceArticle p{
     margin: 0;
     padding: 0;
     font-size: 90%;
 }
 
-section{
+.experienceSection{
     margin: 2rem 0;
 }
 
@@ -31,7 +32,7 @@ a.currentlink:hover{
 
 @media (min-width: 600px) and (max-width: 1024px)
 {
-    main{
+    .experienceMain{
         width: 50rem;
         margin-left: auto;
         margin-right: auto;
@@ -39,14 +40,14 @@ a.currentlink:hover{
         font-size: 140%;
     }
 
-    section{
+    .experienceSection{
         margin: 4rem 0;
     }
 }
 
 @media (min-width: 1024px)
 {
-    main{
+    .experienceMain{
         width: 100rem;
         margin-top: 10rem;
         margin-left: auto;
@@ -54,12 +55,12 @@ a.currentlink:hover{
         font-size: 180%;
     }
 
-    section{
+    .experienceSection{
         margin: 6rem 0;
         display: flex;
     }
 
-    section img{
+    .experienceSection img{
         display: flex;
         width: 100px;
         height: 100%;

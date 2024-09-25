@@ -3,15 +3,15 @@
 
     <?php 
         $title = 'David CRAVO';
-        require 'components/head.php';
+        require '../components/head.php';
     ?>
 
     <body>
-        <?php require 'components/header.php'?>
+        <?php require '../components/header.php'?>
         <main class="homeMain">
             <h1 class="gradientTitle">Bonjour !</h1>
             <article class="homeArticle">
-                <img class="homeImage" src="src/img/home/photoProfilCroppedResized500.jpg" alt="Photo de profil">
+                <img class="homeImage" src="../src/img/home/photoProfilCroppedResized500.jpg" alt="Photo de profil">
                 <div class="homeDocuments">
                     <a class="document" href="/src/pdf/CRAVO_David_CV_2024 Version_2.7.pdf" target="_blank">Mon Curriculum Vitae</a><br>
                     <a class="document" href="/src/pdf/Plan_de_formation_MS2D.pdf" target="_blank">Plan de formation Manager de Solutions Digitales et Data</a><br>

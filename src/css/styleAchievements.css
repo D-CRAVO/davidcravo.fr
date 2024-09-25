@@ -1,25 +1,26 @@
-main{
+.achievementsMain{
     padding: 1rem;
     margin-top: 12rem;
 }
 
-main img{
+.achievementsImage{
     width: 100%;
 }
 
-h1, h2{
+.achievementsH1, 
+.achievementsH2{
     margin: 0;
     padding: 0;
     font-size:90%;
 }
 
-p{
+.achievementsP{
     margin: 0;
     padding: 0;
     font-size: 90%;
 }
 
-section{
+.achievementsSection{
     margin: 2rem 0;
 }
 
@@ -69,7 +70,7 @@ a.currentlink:hover{
 
 @media (min-width: 600px) and (max-width: 1024px)
 {
-    main{
+    .achievementsMain{
         width: 50rem;
         margin-left: auto;
         margin-right: auto;
@@ -77,18 +78,18 @@ a.currentlink:hover{
         margin-top: 10rem;
     }
 
-    section{
+    .achievementsSection{
         margin: 4rem 0;
     }
 
-    section h1{
+    .achievementsH1{
         font-size: 120%;
     }
 }
 
 @media (min-width: 1024px)
 {
-    main{
+    .achievementsMain{
         width: 150rem;
         margin-left: auto;
         margin-right: auto;
@@ -96,17 +97,17 @@ a.currentlink:hover{
         margin-top: 10rem;
     }
 
-    section{
+    .achievementsSection{
         margin: 6rem 0;
         display: flex;
     }
 
-    section img{
+    .achievementsImage{
         width: 500px;
         padding-right: 10rem;
     }
 
-    section h1{
+    .achievementsH1{
         font-size: 120%;
     }
 } 

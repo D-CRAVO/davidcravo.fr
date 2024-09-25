@@ -1,44 +1,20 @@
 <!DOCTYPE html>
 <html lang="fr-fr">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>David CRAVO</title>
-        <link rel="stylesheet" href="../src/css/styleInterests.css">
-        <link rel="stylesheet" href="../src/css/styleHeader.css">
-        <link rel="stylesheet" href="../src/css/styleFooter.css">
-        <link rel="icon" href="../src/img/logoCravoDavid.png">
-    </head>
+    <?php 
+        $title = 'David CRAVO';
+        require '../components/head.php';
+    ?>
 
     <body>
-        <header>
-            <div class="gradient">
-                <a href="../index.html">
-                    <img src="../src/img/profile/photoProfilCroppedResized500.jpg" alt="Photo de profil">
-                </a>
-            <nav >
-                <ul>
-                    <li><a href="../index.php">Acceuil</a></li>
-                    <li><a href="profile.html">Profil</a></li>
-                    <li><a href="experience.html">Expérience</a></li>
-                    <li><a href="education.html">Formations</a></li>
-                    <li><a href="skills.html">Compétences</a></li>
-                    <li><a class="currentlink" href="interests.html">Loisirs</a></li>
-                    <li><a href="achievements.html">Réalisations</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            </div>
-        </header>
+    <?php require '../components/header.php'?>
 
-        <main>
-            <section>
+        <main class="interestsMain">
+            <section class="interestsSection">
                 <div>
-                    <a href="../src/img/interests/MarcheNordique01.jpg" target="_blank"><img src="../src/img/interests/MarcheNordique01Resized.jpg" alt="Marche nordique"></a>
-                    <a href="../src/img/interests/MarcheNordique02.jpg" target="_blank"><img src="../src/img/interests/MarcheNordique02Resized.jpg" alt="Marche nordique"></a>
-                    <a href="../src/img/interests/MarcheNordique03.jpg" target="_blank"><img src="../src/img/interests/MarcheNordique03Resized.jpg" alt="Marche nordique"></a>
+                    <a href="../src/img/interests/MarcheNordique01.jpg" target="_blank"><img class="interestsImage" src="../src/img/interests/MarcheNordique01Resized.jpg" alt="Marche nordique"></a>
+                    <a href="../src/img/interests/MarcheNordique02.jpg" target="_blank"><img class="interestsImage" src="../src/img/interests/MarcheNordique02Resized.jpg" alt="Marche nordique"></a>
+                    <a href="../src/img/interests/MarcheNordique03.jpg" target="_blank"><img class="interestsImage" src="../src/img/interests/MarcheNordique03Resized.jpg" alt="Marche nordique"></a>
                 </div>
                 <article>
                     <h1>La Marche Nordique</h1>
@@ -62,13 +38,13 @@
                 </article>
             </section>
 
-            <section>
+            <section class="interestsSection">
                 <div>
-                    <a href="../src/img/interests/JeuxVideo01.jpg" target="_blank"><img src="../src/img/interests/JeuxVideo01Resized.jpg" alt="Jeux videos"></a>
-                    <a href="../src/img/interests/JeuxVideo02.jpg" target="_blank"><img src="../src/img/interests/JeuxVideo02Resized.jpg" alt="Jeux videos"></a>
-                    <a href="../src/img/interests/JeuxVideo03.png" target="_blank"><img src="../src/img/interests/JeuxVideo03Resized.png" alt="Jeux videos"></a>
-                    <a href="../src/img/interests/JeuxVideo04.jpg" target="_blank"><img src="../src/img/interests/JeuxVideo04Resized.jpg" alt="Jeux videos"></a>
-                    <a href="../src/img/interests/JeuxVideo05.jpg" target="_blank"><img src="../src/img/interests/JeuxVideo05Resized.jpg" alt="Jeux videos"></a>
+                    <a href="../src/img/interests/JeuxVideo01.jpg" target="_blank"><img class="interestsImage" src="../src/img/interests/JeuxVideo01Resized.jpg" alt="Jeux videos"></a>
+                    <a href="../src/img/interests/JeuxVideo02.jpg" target="_blank"><img class="interestsImage" src="../src/img/interests/JeuxVideo02Resized.jpg" alt="Jeux videos"></a>
+                    <a href="../src/img/interests/JeuxVideo03.png" target="_blank"><img class="interestsImage" src="../src/img/interests/JeuxVideo03Resized.png" alt="Jeux videos"></a>
+                    <a href="../src/img/interests/JeuxVideo04.jpg" target="_blank"><img class="interestsImage" src="../src/img/interests/JeuxVideo04Resized.jpg" alt="Jeux videos"></a>
+                    <a href="../src/img/interests/JeuxVideo05.jpg" target="_blank"><img class="interestsImage" src="../src/img/interests/JeuxVideo05Resized.jpg" alt="Jeux videos"></a>
                 </div>
                 <article>
                     <h1>Les Jeux Video</h1>
@@ -87,15 +63,15 @@
                 </article>
             </section>
 
-            <!-- <section>
+            <!-- <section class="interestsSection">
                 <div>
-                    <a href="../src/img/interests/Histoire01.jpg" target="_blank"><img src="../src/img/interests/Histoire01Resized.jpg" alt="Histoire"></a>
-                    <a href="../src/img/interests/Histoire02.jpg" target="_blank"><img src="../src/img/interests/Histoire02Resized.jpg" alt="Histoire"></a>
-                    <a href="../src/img/interests/Histoire03.jpg" target="_blank"><img src="../src/img/interests/Histoire03Resized.jpg" alt="Histoire"></a>
-                    <a href="../src/img/interests/Histoire04.jpg" target="_blank"><img src="../src/img/interests/Histoire04Resized.jpg" alt="Histoire"></a>
-                    <a href="../src/img/interests/Histoire05.jpg" target="_blank"><img src="../src/img/interests/Histoire05Resized.jpg" alt=""></a>
-                    <a href="../src/img/interests/Histoire06.jpg" target="_blank"><img src="../src/img/interests/Histoire06Resized.jpg" alt=""></a>
-                    <a href="../src/img/interests/Histoire07.jpg" target="_blank"><img src="../src/img/interests/Histoire07Resized.jpg" alt=""></a>
+                    <a href="../src/img/interests/Histoire01.jpg" target="_blank"><img class="interestsImage" src="../src/img/interests/Histoire01Resized.jpg" alt="Histoire"></a>
+                    <a href="../src/img/interests/Histoire02.jpg" target="_blank"><img class="interestsImage" src="../src/img/interests/Histoire02Resized.jpg" alt="Histoire"></a>
+                    <a href="../src/img/interests/Histoire03.jpg" target="_blank"><img class="interestsImage" src="../src/img/interests/Histoire03Resized.jpg" alt="Histoire"></a>
+                    <a href="../src/img/interests/Histoire04.jpg" target="_blank"><img class="interestsImage" src="../src/img/interests/Histoire04Resized.jpg" alt="Histoire"></a>
+                    <a href="../src/img/interests/Histoire05.jpg" target="_blank"><img class="interestsImage" src="../src/img/interests/Histoire05Resized.jpg" alt=""></a>
+                    <a href="../src/img/interests/Histoire06.jpg" target="_blank"><img class="interestsImage" src="../src/img/interests/Histoire06Resized.jpg" alt=""></a>
+                    <a href="../src/img/interests/Histoire07.jpg" target="_blank"><img class="interestsImage" src="../src/img/interests/Histoire07Resized.jpg" alt=""></a>
                 </div>
                 <article>
                     <h1>Les reportages scientifiques, technologiques et historiques</h1>
