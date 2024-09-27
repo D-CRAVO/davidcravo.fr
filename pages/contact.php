@@ -1,3 +1,6 @@
+<?php
+    include 'components/includes.php';
+?>
 <!DOCTYPE html>
 <html lang="fr-fr">
 
@@ -11,21 +14,35 @@
 
         <main class="contactMain">
             <div>
-                <form action="" method="post">
-                    <label for="firstname">Prénom</label>
-                    <input type="text" id="firstname" name="firstname">
-                    <label for="lastname">Nom</label>
-                    <input type="text" id="lastname" name="lastname">
-                    <label for="role">Fonction</label>
-                    <input type="text" name="role" id="role">
-                    <label for="company">Entreprise</label>
-                    <input type="text" name="company" id="company">
+                <?php if(array_key_exists('errors', $_SESSION)): ?>
+                    <div>
+                        <?= implode('<br>', $_SESSION['errors']); ?>
+                    </div>
+                <?php endif; ?>
+                <?php if(array_key_exists('success', $_SESSION)): ?>
+                    <div>
+                        Votre message a bien été envoyé.
+                    </div>
+                    <?php unset($_SESSION['success']); ?>
+                <?php endif; ?>
+
+                <form action="../components/postContact.php" method="POST">
+                    <label for="firstname">Prénom *</label>
+                    <input type="text" id="firstname" name="firstname" value="<?= isset($_SESSION['inputs']['firstname']) ? $_SESSION['inputs']['firstname'] : '';?>">
+                    <label for="lastname">Nom *</label>
+                    <input type="text" id="lastname" name="lastname" value="<?= isset($_SESSION['inputs']['lastname']) ? $_SESSION['inputs']['lastname'] : '';?>">
+                    <label for="role">Fonction *</label>
+                    <input type="text" name="role" id="role" value="<?= isset($_SESSION['inputs']['role']) ? $_SESSION['inputs']['role'] : '';?>">
+                    <label for="company">Entreprise *</label>
+                    <input type="text" name="company" id="company" value="<?= isset($_SESSION['inputs']['company']) ? $_SESSION['inputs']['company'] : '';?>">
                     <label for="email">Email *</label>
-                    <input type="email" name="email" id="email" required>
+                    <input type="email" name="email" id="email" value="<?= isset($_SESSION['inputs']['email']) ? $_SESSION['inputs']['email'] : '';?>">
                     <label for="message">Message *</label>
-                    <textarea name="message" id="message" required></textarea>
+                    <textarea name="message" id="message"><?= isset($_SESSION['inputs']['message']) ? $_SESSION['inputs']['message'] : '';?></textarea>
                     <button type="submit">Envoyer</button>
                 </form>
+                <h2>Debug :</h2>
+                <?= var_dump($_SESSION); ?>
             </div>
             <aside class="contactAside">
                 <a href="https://www.linkedin.com/in/davidcravo" target="_blank"><img src="/src/img/contact/linkedIn.png" alt="linkedIn"></a>
@@ -34,8 +51,11 @@
             
         </main>
         
-        
-    
-
     </body>
 </html>
+
+<?php 
+unset($_SESSION['errors']); 
+unset($_SESSION['inputs']);
+unset($_SESSION['success'])
+?>
