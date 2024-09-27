@@ -39,8 +39,8 @@ if(!empty($errors)){
 }else{
     $_SESSION['success'] = 1;
     $to = 'contact@davidcravo.fr';
-    $subject = 'Formulaire de contact de ' . $_POST['firstname'] . ' ' . $_POST['lastname'];
-    $message = $_POST['message'];
+    $subject = 'Proposition de ' . $POST['subject'];
+    $message = 'Message envoyé par ' . $_POST['firstname'] . ' ' . $_POST['lastname'] . '\nContenu : \n' . $_POST['message'];
     $headers = "FROM: " . $_POST['email'];
     mail($to, $subject, $message, $headers);
     header('Location: ../pages/contact.php');

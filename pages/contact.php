@@ -40,7 +40,7 @@
                         }
                     ?>
                     <?= $form->inputEmail('email', 'Email'); ?>
-                    <?= $form->select('object', 'Objet', ['Stage', 'Alternance', 'Emploi', 'Autre']); ?>
+                    <?= $form->select('subject', 'Objet', ['Stage', 'Alternance', 'Emploi', 'Autre']); ?>
                     <?= $form->textarea('message', 'Message'); ?>
                     <button type="submit">Envoyer</button>
                 </form>
