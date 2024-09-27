@@ -1,7 +1,7 @@
 .contactMain{
     margin-left: auto;
     margin-right: auto;
-    padding-top: 15rem;
+    padding-top: 13rem;
     display: flex;
 }
 
@@ -30,7 +30,6 @@ a.currentlink:hover{
 .contactAside img{
     width: 50px;
     margin: 5rem 0 5rem 15rem;
-
 }
 
 .contactMain form{
@@ -40,11 +39,12 @@ a.currentlink:hover{
 
 .contactMain label{
     margin: 1rem 0 0.5rem 0;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
-.contactMain input{
-    height: 4rem;
+.contactMain input,
+.contactMain select{
+    height: 3rem;
     width: 70rem;
     outline-color: #0000ff50;
     padding: 0 1rem;
