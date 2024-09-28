@@ -57,6 +57,6 @@
 
 <?php 
 unset($_SESSION['errors']); 
-// unset($_SESSION['inputs']);
+unset($_SESSION['inputs']);
 unset($_SESSION['success'])
 ?>
