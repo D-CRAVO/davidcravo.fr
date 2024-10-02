@@ -1,5 +1,9 @@
 <?php
     include '../components/includes.php';
+    ini_set('display_errors', 1);
+    ini_set('display_startup_errors', 1);
+    error_reporting(E_ALL);
+
 ?>
 <!DOCTYPE html>
 <html lang="fr-fr">
@@ -27,22 +31,17 @@
 
                 <form action="../components/postContact.php" method="POST">
                     <?php
-                        //var_dump($_SESSION);
                         $form = new Form(isset($_SESSION['inputs']) ? $_SESSION['inputs'] : []);
-                        $inputValues = [
-                            'firstname'=>'Prénom',
-                            'lastname'=>'Nom',
-                            'role'=>'Fonction',
-                            'company'=>'Entreprise'
-                        ];
+                        $inputValues = inputValue::getInputKeysValues();
                         foreach($inputValues as $k => $v){
                             echo $form->inputText($k, $v);
                         }
                     ?>
                     <?= $form->inputEmail('email', 'Email'); ?>
-                    <?= $form->select('subject', 'Objet', ['Stage', 'Alternance', 'Emploi', 'Autre']); ?>
+                    <?= $form->select('subject', 'Objet', Subject::getSubjects()); ?>
                     <?= $form->textarea('message', 'Message'); ?>
-                    <button type="submit">Envoyer</button>
+                    <div class="g-recaptcha" data-sitekey="6LdxWlMqAAAAANKbXKdFkH27nX0ykShBuYhID0Uh"></div>
+                    <button type="submit" name="submit">Envoyer</button>
                 </form>
             </div>
             <!-- <aside class="contactAside"> -->
@@ -58,5 +57,5 @@
 <?php 
 unset($_SESSION['errors']); 
 unset($_SESSION['inputs']);
-unset($_SESSION['success'])
+unset($_SESSION['success']);
 ?>

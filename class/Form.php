@@ -5,7 +5,6 @@ class Form{
 
     public function __construct($data = []){
         $this->data = $data;
-        // var_dump($this->$data);
     }
 
     private function getValue($name){

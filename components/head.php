@@ -20,4 +20,5 @@
         <link rel="stylesheet" href="/src/css/styleHeader.css">
         <link rel="stylesheet" href="/src/css/styleFooter.css">
         <link rel="icon" href="../src/img/logoCravoDavid.png">
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>

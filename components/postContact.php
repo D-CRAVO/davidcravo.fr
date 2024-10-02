@@ -3,16 +3,15 @@
 require '../components/includes.php';
 
 $errors = [];
-$subjects = ['Stage', 'Alternance', 'Emploi', 'Autre'];
-
 $validator = new validator($_POST);
 $validator->check('firstname', 'required');
 $validator->check('lastname', 'required');
 $validator->check('role', 'required');
 $validator->check('company', 'required');
 $validator->check('email', 'email');
-$validator->check('subject', 'in', array_keys($subjects));
+$validator->check('subject', 'in', array_keys(Subject::getSubjects()));
 $validator->check('message', 'required');
+$validator->check('captcha', 'checked');
 $errors = $validator->errors();
 
 // if(!array_key_exists('firstname', $_POST) || $_POST['firstname'] == ''){
@@ -44,7 +43,7 @@ if(!empty($errors)){
 }else{
     $_SESSION['success'] = 1;
     $to = 'contact@davidcravo.fr';
-    $subject = subject($_POST['subject']);
+    $subject = Subject::from($_POST['subject'])->label();
     $message = 'PRENOM : ' . $_POST['firstname'] . ', '
         . 'NOM : ' . $_POST['lastname'] . ', '
         . "FONCTION : " . $_POST['role'] . ', '
@@ -52,6 +51,8 @@ if(!empty($errors)){
         . "CONTENU : " . $_POST['message'];
     $headers = "FROM: " . $_POST['email'];
     mail($to, $subject, $message, $headers);
+    
+    
     header('Location: ../pages/contact.php');
 }
 

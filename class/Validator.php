@@ -28,6 +28,22 @@ class Validator {
         return array_key_exists($name, $this->data) && in_array($this->data[$name], $options);
     }
 
+    public function validate_checked($name){
+        if(isset($_POST['submit'])){
+            $recaptcha = new \ReCaptcha\ReCaptcha('6LdxWlMqAAAAAPYV66WkQ5zqglAP_IxHVJWfE2fM');
+            $gRecaptchaResponse = $_POST['g-recaptcha-response'];
+            $remoteIp = $_SERVER['REMOTE_ADDR'];
+            $resp = $recaptcha->setExpectedHostname('davidcravo.fr')
+                            ->verify($gRecaptchaResponse, $remoteIp);
+            if ($resp->isSuccess()) {
+                return true;
+            } else {
+                $errors = $resp->getErrorCodes();
+                return false;
+            }
+        }
+    }
+
     public function errors(){
         return $this->errors;
     }

@@ -11,14 +11,14 @@
     <?php require '../components/header.php'?>
 
     <main class="educationMain">
-        <section class="educationSection">
+        <!-- <section class="educationSection">
             <img src="/src/img/education/CEFIMLogo.png" alt="Logo CEFIM">
             <article class="educationArticle">
                 <h1>Novembre 2024-Octobre 2025</h1>
                 <h2>Manager de Solutions Digitales et Data - Bac+5</h2>
                 <p>CEFIM de Tours (37)</p>
             </article>
-        </section>
+        </section> -->
 
 
         <section class="educationSection">
