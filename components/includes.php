@@ -3,6 +3,7 @@
 session_start();
 
 require '../class/Form.php';
+require '../class/Regex.php';
 require '../class/Validator.php';
 require '../enums/emailSubjects.php';
 require '../enums/inputValues.php';

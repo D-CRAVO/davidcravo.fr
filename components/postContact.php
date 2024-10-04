@@ -5,12 +5,21 @@ require '../components/includes.php';
 $errors = [];
 $validator = new validator($_POST);
 $validator->check('firstname', 'required');
+$validator->check('firstname', 'regex');
+
 $validator->check('lastname', 'required');
+$validator->check('lastname', 'regex');
+
 $validator->check('role', 'required');
+$validator->check('role', 'regex');
+
 $validator->check('company', 'required');
+$validator->check('company', 'regex');
+
 $validator->check('email', 'email');
 $validator->check('subject', 'in', array_keys(Subject::getSubjects()));
 $validator->check('message', 'required');
+$validator->check('message', 'regex');
 $validator->check('captcha', 'checked');
 $errors = $validator->errors();
 

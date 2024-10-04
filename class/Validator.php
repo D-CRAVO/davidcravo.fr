@@ -44,6 +44,12 @@ class Validator {
         }
     }
 
+    public function validate_regex($name){
+        $regex = new Regex();
+        $pattern = $regex->choose_regex($name);
+        return array_key_exists($name, $this->data) && preg_match($pattern, $this->data[$name]);
+    }
+
     public function errors(){
         return $this->errors;
     }
