@@ -53,12 +53,12 @@ if(!empty($errors)){
     $_SESSION['success'] = 1;
     $to = 'contact@davidcravo.fr';
     $subject = Subject::from($_POST['subject'])->label();
-    $message = 'PRENOM : ' . $_POST['firstname'] . ', '
-        . 'NOM : ' . $_POST['lastname'] . ', '
-        . "FONCTION : " . $_POST['role'] . ', '
-        . "ENTREPRISE : " . $_POST['company'] . ', '
-        . "CONTENU : " . $_POST['message'];
-    $headers = "FROM: " . $_POST['email'];
+    $message = 'PRENOM : ' .    htmlspecialchars(trim($_POST['firstname']), ENT_QUOTES, 'UTF-8') . ', '
+        . 'NOM : ' .            htmlspecialchars(trim($_POST['lastname']), ENT_QUOTES, 'UTF-8') . ', '
+        . "FONCTION : " .       htmlspecialchars(trim($_POST['role']), ENT_QUOTES, 'UTF-8') . ', '
+        . "ENTREPRISE : " .     htmlspecialchars(trim($_POST['company']), ENT_QUOTES, 'UTF-8') . ', '
+        . "CONTENU : " .        htmlspecialchars(trim($_POST['message']));
+    $headers = "FROM: " .       htmlspecialchars(trim($_POST['email']), ENT_QUOTES, 'UTF-8');
     mail($to, $subject, $message, $headers);
     
     
