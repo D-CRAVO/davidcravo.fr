@@ -6,7 +6,7 @@
                 <?php if(isset($title)) : ?>
                         <?= $title; ?>
                 <?php else : ?>
-                        Mon site
+                        David CRAVO
                 <?php endif ?>
         </title>
         <link rel="stylesheet" href="/src/css/styleHome.css">

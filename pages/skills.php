@@ -2,8 +2,7 @@
 <html lang="en">
 
 <?php 
-        $title = 'David CRAVO';
-        require '../components/head.php';
+    require '../components/head.php';
 ?>
 
 <body>

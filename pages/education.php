@@ -2,7 +2,6 @@
 <html lang="en">
 
 <?php 
-    $title = 'David CRAVO';
     require '../components/head.php';
 ?>
 
