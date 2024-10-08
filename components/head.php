@@ -19,6 +19,6 @@
         <link rel="stylesheet" href="/src/css/styleSkills.css">
         <link rel="stylesheet" href="/src/css/styleHeader.css">
         <link rel="stylesheet" href="/src/css/styleFooter.css">
-        <link rel="icon" href="../src/img/logoCravoDavid.png">
+        <link rel="icon" href="../src/img/david_cravo_logo.jpeg">
         <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
