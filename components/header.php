@@ -3,7 +3,7 @@
 <header>
     <div class="gradient">
         <a href="../pages/home.php">
-            <img src="../src/img/logoCravoDavid.png" alt="Logo de David CRAVO">
+            <img src="../src/img/david_cravo_logo.jpeg" alt="Logo de David CRAVO">
         </a>
         <nav >
             <ul>
