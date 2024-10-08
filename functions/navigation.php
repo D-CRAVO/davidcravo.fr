@@ -1,11 +1,9 @@
 <?php
 
-
-
 function nav_item(string $link, string $title): string{
     $class = '';
     if($_SERVER['SCRIPT_NAME'] === $link){
-        $class = 'currentlink';
+        $class = 'current_page';
     }
     return <<<HTML
     <li>
