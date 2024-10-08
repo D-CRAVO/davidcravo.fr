@@ -10,12 +10,6 @@
     text-align: center;
 }
 
-a.currentlink,
-a.currentlink:hover{
-    color: #ff0000;
-    font-weight: bold;
-}
-
 .weight{
     font-weight: bold;
 }
@@ -35,6 +29,7 @@ a.currentlink:hover{
 .contactMain form{
     display: flex;
     flex-direction: column;
+    margin-left: 2rem;
 }
 
 .contactMain label{
@@ -45,7 +40,7 @@ a.currentlink:hover{
 .contactMain input,
 .contactMain select{
     height: 3rem;
-    width: 70rem;
+    width: 100%;
     outline-color: #0000ff50;
     padding: 0 1rem;
 }
@@ -55,6 +50,7 @@ a.currentlink:hover{
     resize: none;
     outline-color: #0000ff50;
     padding: 1rem;
+    margin-bottom: 2rem;
 }
 
 .contactMain button{
@@ -80,6 +76,11 @@ a.currentlink:hover{
         font-size: 2rem;
         padding-bottom: 4rem;
     }
+
+    .contactMain input,
+    .contactMain select{
+        width: 35rem;
+    }
 }
 
 @media (min-width: 1024px)
@@ -88,5 +89,10 @@ a.currentlink:hover{
         width: 80rem;
         font-size: 3rem;
         padding-bottom: 5rem;
+    }
+
+    .contactMain input,
+    .contactMain select{
+        width: 70rem;
     }
 }

@@ -8,7 +8,7 @@ html{
 }
 
 body{
-    font-size: 2em;
+    font-size: 1.6em;
     /*background-color: #0D4663;*/
     /*background-image: url(../img/home/fontHome.jpg);*/
     color: #fff;
@@ -23,18 +23,19 @@ body{
 
 .homeImage{
     border-radius: 50%;
-    width: 20%;
-    margin: 3rem 15rem;
+    width: 15rem;
+    height: 100%;
+    margin: 3rem auto;
 }
 
-a.currentlink,
-a.currentlink:hover{
+a.current_link,
+a.current_link:hover{
     color: #ff0000;
     font-weight: bold;
 }
 
 .document{
-    font-size: 3rem;
+    font-size: 2rem;
     /* color: #fff; */
     color: #0D4663;
     text-decoration: none;
@@ -48,6 +49,7 @@ a.currentlink:hover{
 
 .homeArticle{
     display: flex;
+    flex-direction: column;
 }
 
 /* main h1 a:hover,
@@ -113,5 +115,16 @@ a.currentlink:hover{
 {
     .homeImage{
         width: 40rem;
+        height: 100%;
+    }
+
+    .homeDocuments{
+        display: flex;
+        justify-content: center;
+        text-align: left;
+    }
+
+    .homeArticle{
+        flex-direction: row;
     }
 }
