@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html lang="fr-fr">
+
 <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,3 +25,5 @@
         <link rel="icon" href="../src/img/david_cravo_logo.jpeg">
         <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
+
+<body>

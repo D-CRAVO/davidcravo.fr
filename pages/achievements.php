@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html lang="fr-fr">
-
     <?php 
         require '../components/head.php';
     ?>
@@ -9,9 +6,22 @@
         <?php require '../components/header.php'?>
 
         <main class="achievementsMain">
+
             <section class="achievementsSection">
                 <div>
-                    <a href="/src/pdf/CRAVO_David_Dossier_de_projet.pdf" target="_blank"><img class="achievementsImage" src="/src/img/achievements/ScreenshotDossierDeProjet_2.0.0.png" alt=""></a>
+                    <a href="https://mycompany.davidcravo.fr/" target="_blank"><img class="achievementsImage" src="/src/img/achievements/my_company_under_construction.jpeg" alt=""></a>
+                </div>
+                <article>
+                    <h1 class="achievementsH1">Mon nouveau projet My Company</h1>
+                    <h2 class="achievementsH2">Créé avec HTML/CSS et PHP</h2>
+                    <p class="achievementsP">Je continue à me former en créant un nouveau site sur la présentation d'une entreprise fictive qui doit permettre à de futurs clients de la découvrir.</p>
+                    <button class="styled"><a href="https://mycompany.davidcravo.fr/" target="_blank">Visiter</a></button>
+                </article>
+            </section>
+
+            <section class="achievementsSection">
+                <div>
+                    <a href="/src/pdf/CRAVO_David_Dossier_de_projet.pdf" target="_blank"><img class="achievementsImage" src="/src/img/achievements/dossier_de_projet.jpeg" alt=""></a>
                 </div>
                 <article>
                     <h1 class="achievementsH1">Mon dossier de projet<br> Concepteur Développeur d'Applications</h1>
@@ -21,7 +31,7 @@
             
             <section class="achievementsSection">
                 <div>
-                    <a href="https://universmars.davidcravo.com/laconquetedemars/" target="_blank"><img class="achievementsImage" src="../src/img/achievements/ScreenshotMonUniversMarsResized.png" alt=""></a>
+                    <a href="https://universmars.davidcravo.com/laconquetedemars/" target="_blank"><img class="achievementsImage" src="../src/img/achievements/univers_mars.jpeg" alt=""></a>
                 </div>
                 <article>
                     <h1 class="achievementsH1">Univers Mars</h1>
@@ -33,7 +43,7 @@
 
             <section class="achievementsSection">
                 <div>
-                    <a href="https://universplaystation.davidcravo.fr/" target="_blank"><img class="achievementsImage" src="../src/img/achievements/ScreenshotUniversPlaystationResized.png" alt=""></a>
+                    <a href="https://universplaystation.davidcravo.fr/" target="_blank"><img class="achievementsImage" src="../src/img/achievements/univers_playstation.jpeg" alt=""></a>
                 </div>
                 <article>
                     <h1 class="achievementsH1">Univers Playstation</h1>
@@ -45,7 +55,7 @@
 
             <section class="achievementsSection">
                 <div>
-                    <a href="https://expositions.davidcravo.fr/" target="_blank"><img class="achievementsImage" src="../src/img/achievements/ScreenshotExpositionsResized.png" alt=""></a>
+                    <a href="https://expositions.davidcravo.fr/" target="_blank"><img class="achievementsImage" src="../src/img/achievements/univers_artistes.jpeg" alt=""></a>
                 </div>
                 <article>
                     <h1 class="achievementsH1">Expositions</h1>
