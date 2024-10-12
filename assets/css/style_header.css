@@ -30,9 +30,6 @@ header div{
 }
 
 header img{
-    width: 5rem;
-    height: 100%;
-    margin: 1rem;
     display: none;
 }
 
@@ -83,9 +80,14 @@ header ul li a.current_page{
     }
 
     header img{
+        width: 5rem;
+        height: 100%;
+        margin: 1rem;
         display: flex;
-        width: 8rem;
-        padding-top: 1rem;
+    }
+
+    header .links img{
+        filter: invert(80%);
     }
 
     header ul li{

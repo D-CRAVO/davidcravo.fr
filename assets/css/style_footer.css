@@ -14,13 +14,16 @@
     width: 30%;
 }
 
-.footer_logo{
-    width: 15%;
-}
 
-.footer_title{
+.footer_links{
     width: 40%;
     text-align: center;
+}
+
+.footer_links img{
+    width: 2rem;
+    filter: invert(70%);
+    margin: 0 0.5rem;
 }
 
 .footer_date{
@@ -30,14 +33,11 @@
 
 @media (min-width: 600px) and (max-width: 1024px)
 {
-    .footer_logo{
-        width: 6%;
-    }
 }
 
 @media (min-width: 1024px)
 {
-    .footer_logo{
-        width: 4%;
+    .footer_links img{
+        display: none;
     }
 } 
