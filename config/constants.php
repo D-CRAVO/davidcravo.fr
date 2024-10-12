@@ -41,3 +41,8 @@ define ('SKILLS_TITLES',[
     'tools' => 'Méthodes et outils',
     'foreign_languages' => 'Langues étrangères'
 ]);
+
+define ('LINKS',[
+    'github' => 'https://github.com/D-CRAVO',
+    'linkedin' => 'https://www.linkedin.com/in/davidcravo/'
+]);
