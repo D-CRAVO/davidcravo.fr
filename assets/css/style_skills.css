@@ -1,0 +1,17 @@
+
+.skills_main{
+    margin-top: 12rem;
+}
+
+.skills_article{
+    text-align: center;
+}
+
+
+@media (min-width: 600px) and (max-width: 1024px)
+{
+}
+
+@media (min-width: 1024px)
+{
+} 

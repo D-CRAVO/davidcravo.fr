@@ -1,0 +1,68 @@
+/* 
+couleur 1 #843C0C
+couleur 2 #FF9900
+couleur 3 #FFCC00
+*/
+
+.home_image{
+    border-radius: 50%;
+    width: 15rem;
+    height: 100%;
+    margin: 3rem auto;
+}
+
+a.current_link,
+a.current_link:hover{
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.document{
+    font-size: 2rem;
+    color: #0D4663;
+    text-decoration: none;
+    margin: 2.5rem;
+}
+
+.home_main{
+    margin-top: 12rem;
+    text-align: center;
+}
+
+.home_article{
+    display: flex;
+    flex-direction: column;
+}
+
+.home_documents{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.gradient_title
+{
+    padding-bottom: 3rem;
+    color: #0D4663;
+    background: linear-gradient(#ffffff22, #00000022 , #00000022);
+    box-shadow: 0 1px 0 0 black;
+}
+
+@media (min-width: 600px)
+{
+    .home_image{
+        width: 40rem;
+        height: 100%;
+    }
+
+    .home_documents{
+        display: flex;
+        justify-content: center;
+        text-align: left;
+    }
+
+    .home_article{
+        flex-direction: row;
+    }
+}
