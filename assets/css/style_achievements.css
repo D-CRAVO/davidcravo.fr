@@ -1,7 +1,3 @@
-.achievements_main{
-    margin-top: 10rem;
-}
-
 .achievements_article{
     margin-top: 0.5rem;
 }
@@ -85,10 +81,6 @@
 
 @media (min-width: 1024px)
 {
-    .achievements_main{
-        margin-top: 12rem;
-    }
-
     .achievements_article{
         display: flex;
     }

@@ -10,6 +10,10 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
+main{
+    margin-top: 10rem;
+}
+
 header{
     background-color: #124F6E;
     position: fixed;
@@ -67,6 +71,9 @@ header ul li a.current_page{
 
 @media (min-width: 600px) and (max-width: 1024px)
 {
+    main{
+        margin-top: 10.5rem;
+    }
 
     header ul li{
         padding: 1rem 2rem;
@@ -75,6 +82,10 @@ header ul li a.current_page{
 
 @media (min-width: 1024px)
 {
+    main{
+        margin-top: 8rem;
+    }
+
     header div{
         justify-content: space-between;
     }

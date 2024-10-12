@@ -11,12 +11,6 @@ couleur 3 #FFCC00
     margin: 3rem auto;
 }
 
-a.current_link,
-a.current_link:hover{
-    color: #ff0000;
-    font-weight: bold;
-}
-
 .document{
     font-size: 2rem;
     color: #0D4663;
@@ -25,7 +19,6 @@ a.current_link:hover{
 }
 
 .home_main{
-    margin-top: 12rem;
     text-align: center;
 }
 

@@ -1,4 +1,4 @@
-.footer_main{
+footer{
     display: flex;
     color: #F4A701;
     background-color: #124F6E;
@@ -7,7 +7,7 @@
     align-content: center;
 }
 
-.footer_main a{
+footer a{
     text-decoration: none;
     color: #F4A701;
     align-content: center;

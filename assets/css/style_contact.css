@@ -1,5 +1,6 @@
 .contact_main{
-    margin: 11rem 2rem 0 2rem;
+    margin-right:2rem;
+    margin-left:2rem;
 }
 
 .contact_main form{
@@ -54,6 +55,7 @@
     .contact_main{
         width: 80rem;
         font-size: 3rem;
-        margin: 11rem auto 0 auto;
+        margin-right:auto;
+        margin-left:auto;
     }
 }

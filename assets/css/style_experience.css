@@ -1,5 +1,4 @@
 .experience_main{
-    margin-top: 10rem;
     display: flex;
     flex-direction: column;
 }
@@ -46,9 +45,6 @@
 
 @media (min-width: 1024px)
 {
-    .experience_main{
-        margin-top: 12rem;
-    }
     .experience_article{
         display: flex;
         margin: 1rem;
