@@ -1,3 +1,8 @@
+<?php
+    $title = $title ?? "David CRAVO";
+    $description = $description ?? "Mon site Web"
+?>
+
 <!DOCTYPE html>
 <html lang="fr-fr">
 
@@ -5,24 +10,18 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>
-                <?php if(isset($title)) : ?>
-                        <?= $title; ?>
-                <?php else : ?>
-                        David CRAVO
-                <?php endif ?>
-        </title>
-        <link rel="stylesheet" href="/src/css/styleHome.css">
-        <link rel="stylesheet" href="/src/css/styleAchievements.css">
-        <link rel="stylesheet" href="/src/css/styleContact.css">
-        <link rel="stylesheet" href="/src/css/styleEducation.css">
-        <link rel="stylesheet" href="/src/css/styleExperience.css">
-        <link rel="stylesheet" href="/src/css/styleInterests.css">
-        <link rel="stylesheet" href="/src/css/styleProfile.css">
-        <link rel="stylesheet" href="/src/css/styleSkills.css">
-        <link rel="stylesheet" href="/src/css/styleHeader.css">
-        <link rel="stylesheet" href="/src/css/styleFooter.css">
-        <link rel="icon" href="../src/img/david_cravo_logo.jpeg">
+        <title><?= $title ?></title>
+        <link rel="stylesheet" href="/assets/css/style_home.css">
+        <link rel="stylesheet" href="/assets/css/style_achievements.css">
+        <link rel="stylesheet" href="/assets/css/style_contact.css">
+        <link rel="stylesheet" href="/assets/css/style_education.css">
+        <link rel="stylesheet" href="/assets/css/style_experience.css">
+        <link rel="stylesheet" href="/assets/css/style_interests.css">
+        <link rel="stylesheet" href="/assets/css/style_profile.css">
+        <link rel="stylesheet" href="/assets/css/style_skills.css">
+        <link rel="stylesheet" href="/assets/css/style_header.css">
+        <link rel="stylesheet" href="/assets/css/style_footer.css">
+        <link rel="icon" href="../assets/images/david_cravo_logo.jpeg">
         <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
