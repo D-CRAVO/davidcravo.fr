@@ -16,7 +16,6 @@
         <link rel="stylesheet" href="/assets/css/style_contact.css">
         <link rel="stylesheet" href="/assets/css/style_education.css">
         <link rel="stylesheet" href="/assets/css/style_experience.css">
-        <link rel="stylesheet" href="/assets/css/style_interests.css">
         <link rel="stylesheet" href="/assets/css/style_profile.css">
         <link rel="stylesheet" href="/assets/css/style_skills.css">
         <link rel="stylesheet" href="/assets/css/style_header.css">
